@@ -12,10 +12,10 @@ public class viewDetails extends JFrame {
     JScrollPane sp1;
     JTable details;
     viewDetails(){
-        setSize(1000,700);
+        setSize(1200,700);
 
         sp1 = new JScrollPane();
-        sp1.setBounds(60,80,900,400);
+        sp1.setBounds(50,80,1100,400);
         add(sp1);
 
         details = new JTable();

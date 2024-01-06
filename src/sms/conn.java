@@ -8,9 +8,9 @@ public class conn {
     Connection c;
     Statement s;
     conn(){
-        String username = "";
-        String password = "";
-        String url = "";
+        String username = "root";
+        String password = "GigaNigga_69";
+        String url = "jdbc:mysql://localhost:3306/studmonsys";
         try{
           c = DriverManager.getConnection(url, username,password);
           s = c.createStatement();

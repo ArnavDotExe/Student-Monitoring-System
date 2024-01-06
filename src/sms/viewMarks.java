@@ -4,12 +4,15 @@ import net.proteanit.sql.DbUtils;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 
-public class viewMarks extends JFrame {
+public class viewMarks extends JFrame implements ActionListener {
     JTabbedPane tabs;
     JScrollPane sp1, sp2;
     JTable sem1, sem2;
+    JButton addMarks;
     viewMarks(){
         setSize(1000,700);
 
@@ -32,6 +35,12 @@ public class viewMarks extends JFrame {
         tabs.addTab("SEM 1", sp1);
         tabs.addTab("SEM 2", sp2);
 
+        addMarks = new JButton("ADD MARKS");
+        addMarks.setBounds(60,200, 200,50);
+        addMarks.setFont(Font.getFont("Tahoma"));
+        addMarks.addActionListener(this);
+        add(addMarks);
+        
         setLayout(null);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -63,5 +72,13 @@ public class viewMarks extends JFrame {
 
     public static void main(String[] args) {
         new viewMarks();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        if(ae.getSource()==addMarks)
+        {
+            new addMarks();
+        }
     }
 }

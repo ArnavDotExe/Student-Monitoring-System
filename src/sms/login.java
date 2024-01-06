@@ -71,7 +71,7 @@ public class login extends JFrame implements ActionListener {
                     JOptionPane.showMessageDialog(null, "Invalid Credentials!!");
                 }
             }catch (Exception e){
-
+                System.out.println(e);
             }
 
         }

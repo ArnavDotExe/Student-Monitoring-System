@@ -68,15 +68,15 @@ public class addAttendance extends JFrame implements ActionListener {
         submit.setFont(f1);
         add(submit);
 
-       ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("C:\\Users\\Arnav Mangaonkar\\IdeaProjects\\Student_Monitoring_System\\img\\back.png"));
-       Image img1 = i1.getImage().getScaledInstance(75,50,Image.SCALE_DEFAULT);
-       i1 = new ImageIcon(img1);
-       back = new JButton(i1);
-       back.setBounds(0,0 , 50,50);
-       back.addActionListener(this);
-       add(back);
+        ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("jproject_images/back.png"));
+        Image img1 = i1.getImage().getScaledInstance(75,50,Image.SCALE_DEFAULT);
+        i1 = new ImageIcon(img1);
+        back = new JButton(i1);
+        back.setBounds(0,0 , 50,50);
+        back.addActionListener(this);
+        add(back);
 
-       //comment out for button without imgIcon
+    //comment out for button without img
 //        back = new JButton("Back");
 //        back.addActionListener(this);
 //        back.setBounds(0,0,100,50);
